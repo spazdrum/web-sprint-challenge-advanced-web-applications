@@ -41,31 +41,31 @@ const Login = (props) => {
       })
       .catch((err) => console.log("err", err.message));
   };
-};
 
-return (
-  <>
-    <h1>Welcome to the Bubble App!</h1>
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          value={credentials.username}
-          onChange={handleChanges}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={credentials.password}
-          onChange={handleChanges}
-        />
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  </>
-);
+  return (
+    <>
+      <h1>Welcome to the Bubble App!</h1>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={credentials.username}
+            onChange={handleChanges}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={credentials.password}
+            onChange={handleChanges}
+          />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </>
+  );
+};
 
 export default Login;
